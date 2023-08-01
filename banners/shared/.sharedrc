@@ -1,0 +1,61 @@
+{
+  "settings": {
+    "browserSupport": ["> 1%", "not ie 11"],
+    "optimizations": {
+      "css": true,
+      "image": true,
+      "html": true,
+      "js": true
+    },
+    "contentSource":{
+      "url":"https://docs.google.com/spreadsheets/d/14j-dMkuriC4-lk8kY2Hmwbv11Z-5vpjiUrdXBumxueE/edit#gid=0",
+      "apiKey": "AIzaSyDdGJ8uXgrqiE8BwvP7OqyMrD0BWhJ0ZH4",
+      "tabName": "main",
+      "filter": {
+        "size": "300x250"
+      }
+    },
+    "bundleName": "Milka-${content.size}-${content.version}-${content.subversion}",
+    "useOriginalFileNames": false,
+    "entry": {
+      "js": "./script/main.js",
+      "html": "./index.hbs"
+    },
+    "fonts": [
+      {
+        "sources": [
+          "./fonts/OpenSans-Regular.woff",
+          "./fonts/OpenSans-Regular.woff2"
+        ],
+        "subset": {
+          "glyphs": [
+            "content.title"
+          ]
+        }
+      },
+      {
+        "sources": [
+          "./fonts/OpenSans-Bold.woff",
+          "./fonts/OpenSans-Bold.woff2"
+        ],
+        "subset": {
+          "glyphs": [
+            "content.cta"
+          ]
+        }
+      }
+    ]
+  },
+  "content": {
+    "css": "./css/style.css",
+    "defaultFonts": [
+      "OpenSans",
+      "OpenSansBold"
+    ],
+    "defaultFontUrl": "./css/fonts.css",
+    "clickTag": "https://www.google.com",
+    "logo": "./img/logo.svg",
+    "cta": "CLICK HERE",
+    "bgcolor": "#FFFFFF"
+  }
+}

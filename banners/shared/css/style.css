@@ -1,0 +1,147 @@
+:root {
+  --red: #d51b28;
+  --grey: #221f1f;
+  --white: #221f1f;
+
+  --width: var(--settings-size-width)px;
+  --height: var(--settings-size-height)px;
+
+  --logoW: var(--content-logoW)px;
+  /* --logoScale: var(--content-logoScale); */
+  --logoX: var(--content-logoX)px;
+  --logoY: var(--content-logoY)px;
+
+  --whitePathY: var(--content-whitePathY)px;
+  --violetPathY: var(--content-violetPathY)px;
+
+  --shadowY: var(--content-shadowY)px;
+  
+  /* --copy1W: var(--content-copy1W)px;
+  --copy1X: var(--content-copy1X)px;
+  --copy1Y: var(--content-copy1Y)px; */
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  user-select: none;
+}
+
+body {
+  background-color: var(--content-bgcolor);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--width);
+  height: var(--height);
+}
+
+.border {
+  border: 1px solid #000000;
+
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  width: var(--width);
+  height: var(--height);
+}
+
+.content {
+  opacity: 0;
+}
+
+.mainExit {
+  cursor: pointer;
+}
+
+.bg{
+  position: absolute;
+  width: var(--width);
+  height: var(--height);
+  left: 0px;
+  top: 0px;
+}
+
+.bgAsset {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+.shadow {
+  position: absolute;
+  left: 0px;
+  top: var(--shadowY);
+  width: 100%;
+}
+
+.whitePath {
+  position: absolute;
+  left: 0;
+  top: var(--whitePathY);
+}
+
+.violetPath {
+  position: absolute;
+  left: 0px;
+  top: var(--violetPathY);
+}
+
+.copy{
+  position: absolute;
+  width: var(--width);
+  height: var(--height);
+  left: 0px;
+  top: 0px;
+}
+
+.copy1, .copy2, .copy3 {
+  position: absolute;
+  /* left: var(--copy1X);
+  top: var(--copy1Y);
+  width: var(--copy1W); */
+  left: 0;
+  top: 0;
+  scale: 1;
+  width: 100%;
+}
+
+/* .copy2 {
+  position: absolute;
+  left: -391px;
+  top: -926px;
+  scale: 0.325;
+}
+
+.copy3 {
+  position: absolute;
+  left: -391px;
+  top: -941px;
+  scale: 0.325;
+} */
+
+.logo {
+  position: absolute;
+  left: var(--logoX);
+  top: var(--logoY);
+  /* scale: var(--logoScale); */
+  scale: 1;
+  width: var(--logoW);
+}
+
+
